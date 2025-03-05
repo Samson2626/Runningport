@@ -1,0 +1,543 @@
+
+<html>
+<head> 
+    <meta charset="UTF-8">
+	<style>
+        html{scroll-behavior: auto;}
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+ height: 1px;
+
+  
+    background-color: #000;
+    overflow-x: hidden;
+
+    overflow-y: hidden;
+}
+@keyframes fa {
+    from {
+      opacity: 0;
+    
+    }
+    to {
+      opacity: 1;
+     
+    }
+  }
+  @keyframes fa1 {
+    from {
+        margin-left: 0px;
+    
+    }
+    to {
+        margin-left: 70px;
+     
+    }
+  }
+  .nave{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    z-index: -2;
+    background-color: #9c9c9c;
+  }
+  .naveb{
+    position:fixed;
+    top:76%;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    z-index: -2;
+    
+  }
+  .navebr{
+    position: absolute;
+    left: 82%;
+    top:0;
+    height: 100%;
+    width: 15%;
+  }
+  .navebl{
+    position: absolute;
+    left: 3%;
+    top:0;
+    height: 100%;
+    width: 15%;
+  }
+  .nave img{
+    position: absolute;
+    left: 82%;
+    top:0;
+    height: 100%;
+    width: 15%;
+    
+  }
+  .sels{
+    position: fixed;  
+    top:15%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #7e4fb4;
+    z-index: -2;
+    border: 15px solid black;
+
+}
+.str{
+    animation: fa 3s infinite alternate;
+    position: relative;
+    left:50%;
+    top:50%;
+    height: 15px;
+    width: 15px;  background-color: #fff;
+    scale: 0.4;
+    transform: rotatez(45deg);
+    box-shadow: 0 0 40px 10px rgb(158, 68, 15),0 0 80px 20px rgba(63, 151, 68, 0.7);
+    transition:box-shadow 0.2s ease-in-out;
+    z-index: 6;
+}
+.art{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+}
+.elmnt{
+    position: fixed;
+    top:25%;
+    left:5%;
+    width: 10%;
+    height: 5%;
+   opacity: 1;
+    z-index: 4;
+    font-weight: 600;
+    color: #7e4fb4;
+    font-size: 100px;
+    background-color: #000;
+    box-shadow: 0 0 40px 10px rgb(223, 221, 219),0 0 80px 20px rgba(63, 151, 68, 0.7);
+    transition:box-shadow 0.2s ease-in-out;
+   
+}
+@keyframes f7 {
+    from{transform: scale(1.1);}
+    to{transform: scale(1.3);}
+    
+}
+@keyframes f6 {
+    from{transform: scale(1.0);}
+    to{transform: scale(1.2);}
+    
+}
+.img1{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 4;
+    opacity: 1;
+}
+.imgt{
+    position: fixed;
+    top:65%;
+    left: 38%;
+    width: 300px;
+    height: 300px;
+    z-index: 4;
+    opacity: 1;
+    border-radius: 50%;
+    animation: f7 3s infinite alternate;
+}
+.universe {
+    position: fixed;
+    top:50%;
+    left: 0;
+z-index: 4;
+    width: 100%;
+    height: 50%;
+    background-image: radial-gradient(rgb(83, 83, 102),#040700ff); 
+}
+.tiktok{
+    position: fixed;
+    top:85%;
+    left: 6.5%;
+    width: 85%;
+    height: 130px;
+    z-index: -2;
+    opacity: 1;
+    background-color: #9c9c9c;
+    border-top-right-radius: 45%;
+   
+    border-bottom-right-radius: 45%;
+    border-top-left-radius: 45%;
+   
+    border-bottom-left-radius: 45%;
+
+    animation: f6 2.5s infinite alternate;
+
+}
+.tiktok img{
+    position: absolute;
+    left: 40%;
+    top:0;
+    width: 20%;
+    height: 100%;
+}
+.dscrp{
+    position: fixed;
+    top:67%;
+    left: 50%;
+    font-weight: 300;
+    color: #fdde2c;
+    font-size: 69px;
+
+    display:flex;
+    justify-content: flex-end;
+
+  
+    z-index:-2;
+}
+.dscrp h5{
+    justify-content: end;
+}
+.lod1{
+
+    position: absolute;
+    top:43%;
+    left: 43%;
+    width:75px;
+    height: 20px;
+    background-color: #777;
+    animation: f9 3s infinite ;
+    z-index: 9;
+}
+#e4{  
+    position: absolute;
+    
+    left: 43%;
+    width:75px;
+    height: 20px;
+    background-color: #777;   
+    
+    animation: f10 3s infinite ;}
+    @keyframes f9{
+        0%{  width:75px;}
+        25% {width:150px; }
+        50% {  transform: translateX(0); width:75px;}
+        75% {transform: translateX(-75px); width:150px ; }
+        100% {width:75px ; transform: translateX(0px);}
+        
+    }
+    .lod{
+        position: fixed;
+        width:100%;
+        height: 100%;
+        object-fit:cover;
+        background-image: radial-gradient(rgb(83, 83, 102),#040700ff); 
+        z-index: 9;
+        animation: f11 15s forwards;}
+
+
+        @keyframes f11{
+            0% {  }
+           
+            95% {opacity: 1; z-index: 200;}
+           
+           
+            100% {opacity: 0; z-index: -3;}
+            
+        }
+        @keyframes f10{
+
+            0% {  transform: translateX(0); width:75px;}
+            25% {transform: translateX(-75px); width:150px ; }
+            50%{  width:75px; transform: translateX(0px);}
+            75% {width:150px; }}
+</style>
+
+</head>
+<body>
+    <div class="lod" id="lod1">
+        <div class="lod1"></div>
+        <div class="lo1" style="top: 46%;" id="e4"></div>
+</div>
+
+<div class="universe"></div>
+<div class="dscrp" id="dscrp"><h5>..Where is?</h5></div>
+<div class="nave" id="nave" ><img   src="zy.jpg" alt="Dashboard Icon"></div>
+<div class="naveb" id="naveb"><img   class="navebr" id="navebr" src="akr.jpg" alt="Dashboard Icon">
+    <img   class="navebl" id="navebl" src="akl.jpg" alt="Dashboard Icon">
+</div>
+
+<div  ><img  class="sels" id="sm1" src="h1.jpg" alt="Dashboard Icon"></div>
+    <div  ><img  class="img1"  src="p1.jpg" alt="Dashboard Icon"></div>
+    <div  ><img  class="imgt" id="imgt" src="p2.jpg" alt="Dashboard Icon"></div>
+    <div class="tiktok" id="tiktok"> <a id="tik1" href="https://vm.tiktok.com/ZMBefukut/"><img    src="ak1.jpg" alt="Dashboard Icon"> </a></div>
+  
+    <div class="art" id="art">
+
+
+</div>
+
+	<script>
+ 
+     const colo=["#a84026","#2669a8","#43b397","#b44fa3","#57b44f","#7e4fb4"]
+    
+     const word=["M","h","r","t","3","S","n","t","a","y","w","u","4","A","R","T","5","G","a","l","l","e","r","y"]
+     const fontFamilies = [
+  "Arial, sans-serif",
+  "Georgia, serif",
+  "Courier New, monospace",
+  "Tahoma, sans-serif",
+  "Verdana, sans-serif",
+  "Times New Roman, serif"
+];
+
+
+
+     
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function loopWithSleepp(items) {
+
+    for(let i=0; i<2; i++){
+      
+    }
+
+}
+loopWithSleepp();
+
+async function loopWithSleep(items) {
+ 
+    
+
+
+    await sleep(15090); 
+
+
+        
+    let topp=25;
+    let leftt=0;
+    let j=0;
+    let j1=0;
+    let ra="%"
+   for(let i=0; i<24; i++){
+    const v2=document.createElement('div');
+    if(j>7){j=0;}
+    if(j1>3){j1=0;}
+  
+    v2.className="elmnt";
+    let ww=word[i]
+    if(ww=="3" ){
+        let lf1=leftt;
+        let to1=topp;
+        leftt=leftt.toString()+ra;
+       
+        v2.style.left = leftt;
+     console.log('3');
+       
+       
+        v2.style.top = topp;
+        topp=to1;
+        leftt=lf1+4;
+    }
+    else if(ww=="4"){
+       topp=32;
+       leftt=30;
+       let lf1=leftt
+       let to1=topp;
+       leftt=leftt.toString()+ra;
+      
+       v2.style.left = leftt;
+       leftt=lf1;
+     
+      
+       
+
+    }
+    else if(ww=="5"){
+        topp=38;
+        leftt=15;
+        let lf1=leftt
+        let to1=topp;
+        leftt=leftt.toString()+ra;
+       
+        v2.style.left = leftt;
+        leftt=lf1;
+    }
+    else{
+
+        let p=document.createElement("h4");
+        let lf1=leftt
+        let to1=topp;
+        leftt=leftt.toString()+ra;
+        p.textContent=word[i];
+        v2.appendChild(p);
+        v2.style.left = leftt;
+        v2.style.color=colo[j];
+        v2.style.fontFamily=fontFamilies[j];
+        topp=topp+ra;
+        leftt=lf1+ 9;
+        console.log("top",topp);
+        v2.style.top = topp;
+        topp=to1;
+        console.log(leftt);
+        
+        
+        j=j+1;
+        j1=j1+1;
+        await sleep(500); 
+        document.body.appendChild(v2);
+
+    }
+   
+   
+ 
+   
+  
+   
+   
+     
+   }
+       
+} 
+       
+
+
+for(let i=0; i<=300; i++ )
+        { 
+            const v=document.createElement('div');
+            v.className="str";
+            let ran=Math.random();
+            ra=100*ran;
+            ra=ra+"%" ;
+           
+            v.style.left = ra;
+        v.style.top = ra;
+       
+       
+       document.body.appendChild(v)}
+     
+       
+       loopWithSleep();
+const s1=document.getElementById('dscrp');
+const s2=document.getElementById('tiktok');
+const s3=document.getElementById('art');
+
+const s4=document.getElementById('sm1');
+const s5=document.getElementById('nave');
+const s6=document.getElementById('naveb');
+
+const s7=document.querySelector('.str');
+
+
+const p1=document.getElementById('imgt');
+const pr=document.getElementById('navebr');
+const pl=document.getElementById('navebl');
+
+
+
+       
+       p1.addEventListener('click', function (){
+     
+ 
+        s1.style.zIndex= "7";
+        s2.style.zIndex= "7";
+        s3.style.zIndex= "6";
+        s4.style.zIndex= "7";
+        s5.style.zIndex= "7";
+        s6.style.zIndex= "7";
+        s7.style.zIndex= "6";
+      
+        
+    
+     }) 
+ 
+    
+     const l1=document.getElementById('tik1');
+     const linkk = [
+    "https://vm.tiktok.com/ZMBefukut/",
+    "https://www.tiktok.com/@ruhamadely/photo/7473495432400784646",
+    "https://vm.tiktok.com/ZMBef5xTt/",
+    "https://vm.tiktok.com/ZMBef9dW8/",
+    "https://vm.tiktok.com/ZMBefHg3P/",
+    "https://vm.tiktok.com/ZMBef5Wtp/",
+
+    "https://vm.tiktok.com/ZMBef5Wtp/",
+    "#",
+    "https://vm.tiktok.com/ZMBeftL7R/"
+];
+const disk = [
+    "..Where is?",
+    "..Fallin",
+    "..Though",
+    "..ANGEL (wings)",
+    "..the eyes chico they never lie...",
+    "..dreamin...",
+    "..heart shell",
+    "...Xo",
+    "..nobody gets me.."
+];
+     let rft=0;
+    
+     const pic=["h1.jpg","h2.jpg","h3.jpg","h4.jpg","h5.jpg","h6.jpg","h7.jpg","h8.jpg","h9.jpg"]
+   
+     pl.addEventListener('click', function (){
+      
+      if(rft<=0){rft=0;}
+      else{
+        rft=rft-1;
+      }
+      s4.src=pic[rft]
+    s1.querySelector("h5").innerText=disk[rft]
+    l1.href=linkk[rft];
+    
+     }) 
+     pr.addEventListener('click', function (){
+      
+        if(rft>=8){rft=8;}
+
+        else{
+          rft=rft+1;
+        }
+        s4.src=pic[rft]
+      s1.querySelector("h5").innerText=disk[rft]
+      l1.href=linkk[rft];
+        
+    
+     })  
+
+
+    
+     s5.addEventListener('click', function (){
+      
+        s1.style.zIndex= "-2";
+        s2.style.zIndex= "-2";
+        s3.style.zIndex= "-1";
+        s4.style.zIndex= "-2";
+        s5.style.zIndex= "-2";
+        s6.style.zIndex= "-2";
+        s7.style.zIndex= "-1";
+        
+    
+     })  
+    </script>
+ 
+
+
+</body>
+</html>
